@@ -1,0 +1,168 @@
+.freelancerProfile {
+  border-radius: 10px;
+
+  & .weight-500 {
+    font-weight: 500;
+  }
+
+  & .ratingIcons {
+    color: #fea87e;
+  }
+
+  & .onlineIcon {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    background: #fff;
+    border-radius: 50%;
+    color: #32c850;
+    padding: 3px;
+  }
+
+  & .profileEditButton {
+    background: #fac751;
+  }
+
+  & .profileEditButton:hover {
+    background-color: #fad377;
+  }
+
+  & .profileContainer {
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 1295px) and (min-width: 990px) {
+    & .profileContainer {
+      flex-wrap: nowrap !important;
+    }
+
+    & .profileImage {
+      width: 123px !important;
+      height: 123px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    & .profileText {
+      margin-top: 2px !important;
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    & .profileText {
+      margin-top: 2px !important;
+    }
+  }
+
+  @media only screen and (max-width: 990px) {
+    & .messageBtn {
+      width: 100% !important;
+    }
+  }
+}
+
+.freelancerAbout {
+  & .descriptionContainer {
+    border: 1px solid #e3d6d1;
+    border-radius: 10px;
+    margin-top: 50px;
+     min-height: 300px;
+    margin-bottom: 20px;
+  }
+
+  & .profileEditButton {
+    background: #fac751;
+    width: 35px;
+    height: 35px;
+  }
+
+  & .eductationContainer {
+    border: 1px solid #e3d6d1;
+    border-radius: 10px;
+    margin-top: 50px;
+    min-height: 145px;
+    // height: 49%;
+    // min-height: 49%;
+  }
+
+  & .templateContainer {
+    border: 1px solid #e3d6d1;
+    border-radius: 10px;
+    min-height: 145px;
+  }
+
+  & .newLineBreak {
+    white-space: pre-line;
+  }
+
+  @media only screen and (max-width: 1190px) {
+    & .descriptionContainer {
+      height: auto;
+      padding: 1.5rem !important;
+    }
+
+    & .eductationContainer {
+      height: auto;
+    }
+
+    & .templateContainer {
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    & .viewBtn {
+      min-width: 40px !important;
+    }
+  }
+}
+
+.addGig {
+  & .icon {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+.addTemplate {
+  background-color: #fffbf6;
+  border: 1px solid #ece5e3;
+  border-radius: 10px;
+  width: 32%;
+  height: 70px;
+}
+
+.freelanceReview {
+  & .rating-icon {
+    color: #fea87e;
+  }
+
+  & .weight-600 {
+    font-weight: 600;
+  }
+
+  @media only screen and (max-width: 467px) {
+    & .loadMoreBtn {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .responsiveImg {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .addTemplate {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .addTemplate {
+    height: 100px;
+  }
+}

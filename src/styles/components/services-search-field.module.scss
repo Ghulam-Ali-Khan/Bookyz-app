@@ -1,0 +1,35 @@
+.formGroup {
+    position: relative;
+  
+    & .searchIcon {
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      translate: 0 -50%;
+    }
+  
+    & .searchField {
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px 10px 10px 45px;
+      outline: none;
+      width: 100%;
+      border: transparent;
+      color: #422438;
+      font-family: 'Poppins', sans-serif;
+  
+      &::placeholder {
+        color: #9c8c97;
+      }
+    }
+  
+    & .loader {
+      position: absolute;
+      right: 35px;
+      top: 50%;
+      translate: 0 -50%;
+    }
+  }
+  

@@ -1,0 +1,133 @@
+@import "../common/colors.scss";
+
+@mixin fieldStyles {
+  border: 1px solid #ced4da;
+  color: #232329;
+  background: white;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  height: 38px;
+  transition: border 0.3s;
+
+  &:hover {
+    border-color: $primary;
+  }
+
+  &:focus {
+    border: 1px solid $primary;
+    outline: none;
+  }
+
+  &:disabled {
+    background: $disabled;
+  }
+}
+
+@mixin singleMultiFieldStyles {
+  min-height: 38px;
+  height: auto;
+  padding: 0;
+  border: none;
+}
+
+.fieldWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  & .field {
+    @include fieldStyles;
+  }
+
+  & .fieldSmall {
+    @include fieldStyles;
+    padding: 2px 4px;
+    height: 28px;
+  }
+
+  & textarea {
+    @include fieldStyles;
+
+    height: auto !important;
+    max-height: 100px;
+    resize: none;
+  }
+
+  .multiField {
+    @include fieldStyles;
+
+    @include singleMultiFieldStyles;
+  }
+
+  .singleSelect {
+    @include fieldStyles;
+
+    @include singleMultiFieldStyles;
+  }
+
+  & .iconGroup {
+    display: flex;
+
+    & .inputIcon {
+      background: #f2f4f7;
+      border: 1px solid #f2f4f7;
+      padding: 5px;
+      transition: all 0.3s;
+
+      & svg {
+        fill: #999999;
+        width: 20px;
+        height: 20px;
+        font-size: 18px;
+      }
+
+      &.active {
+        background: $primary;
+        transition: all 0.3s;
+
+        & svg {
+          fill: white;
+        }
+      }
+    }
+  }
+}
+
+.iconGroup {
+  display: flex;
+
+  & .inputIcon {
+    border: 1px solid #f2f4f7;
+    padding: 5px;
+    transition: all 0.3s;
+
+    & svg {
+      width: 20px;
+      height: 20px;
+      font-size: 18px;
+    }
+
+    &.active {
+      transition: all 0.3s;
+    }
+  }
+
+  & .inputText {
+    border: 1px solid #ced4da;
+    border-right: none;
+    background-color: #f2f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+
+    & p {
+      white-space: nowrap;
+      padding: 5px 15px;
+      font-size: 12px;
+      color: #6e6e6e;
+    }
+  }
+}

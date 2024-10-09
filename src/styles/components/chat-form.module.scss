@@ -1,0 +1,74 @@
+.createWorkspace {
+    & .jobPosting {
+      background: #ffffff;
+      border-radius: 10px;
+    }
+  
+    & .skillsContainer {
+      border: 1px solid #ece9eb;
+      border-radius: 5px;
+    }
+  
+    & .dotsIcon {
+      width: 54px;
+      justify-content: center;
+      user-select: none;
+    }
+  
+    & .dotsIcon:hover {
+      background: #fff6f2;
+      width: 54px;
+      justify-content: center;
+      border-radius: 5px;
+    }
+  
+    & .textAreaInput {
+      font-size: 16px !important;
+      color: #000000 !important;
+    }
+  
+    & ::placeholder {
+      color: #000000 !important;
+    }
+  
+    & .divider {
+      color: #ece9eb;
+    }
+  
+    & .uploadBtn {
+      background: #fbf9f1;
+      border: 1px dashed #ebe4e7;
+    }
+  
+    & .uploadBtn:hover {
+      background: #ececec;
+    }
+  
+    & .uploadedFile {
+      border: 1px solid #ebedf4;
+      border-radius: 5px;
+    }
+  
+    & .cancelButton {
+      background: #fce8e8;
+      border-radius: 5px;
+      color: #ee2222;
+      padding: 2px;
+    }
+  
+    & .cancelBtnText {
+      font-size: 1rem !important;
+    }
+  
+    & .skillsEdit {
+      width: 200px !important;
+    }
+  
+    @media only screen and (max-width: 480px) {
+      & .textAreaInput {
+        font-size: 12px !important;
+        color: #000000 !important;
+      }
+    }
+  }
+  

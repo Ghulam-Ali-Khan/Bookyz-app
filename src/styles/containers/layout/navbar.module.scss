@@ -1,0 +1,199 @@
+@import '../../common/colors.scss';
+
+.dashboard-navbar {
+  & .notification-icon {
+    background: $primary;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  & .online-icon {
+    font-size: 12px;
+    color: #50cd89;
+    background: $primary;
+    border-radius: 50%;
+    padding: 1px;
+    position: absolute;
+    top: 47px;
+  }
+}
+
+.client-notifications {
+  & .online-icon {
+    font-size: 12px;
+    color: #50cd89;
+    background: #fff;
+    border-radius: 50%;
+    padding: 1px;
+    position: relative;
+    bottom: 18px;
+  }
+
+  & .notification-message {
+    color: #a0919b;
+    font-size: 16px;
+  }
+
+  & .notification-time {
+    color: #a0919b;
+    font-size: 14px;
+  }
+}
+
+.activeNavLink {
+  color: white;
+  border-bottom: 2px solid white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbarNavItem {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid white;
+    transition: all 200ms;
+  }
+}
+
+.navbarNavItemDark {
+  color: $primary;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: $primary-hover;
+    border-bottom: 2px solid $primary-hover;
+  }
+}
+
+.navToggleButton {
+  cursor: pointer;
+}
+
+.drawerLink {
+  color: $lightGrey;
+
+  &:hover {
+    transition: all 200ms;
+    color: white;
+  }
+}
+
+.drawerSearchFieldBox {
+  position: relative;
+
+  & .searchIconLight {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    color: white;
+  }
+
+  & .drawerSearchField {
+    padding: 5px 15px 5px 35px;
+    background: rgba(113, 113, 113, 0.3);
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & .drawerSearchFieldLight {
+    background: rgba(113, 113, 113, 0.3);
+    color: #ffffff;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+.searchFieldBox {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+
+  & .inputSearchIcon {
+    position: absolute;
+    left: 15px;
+    cursor: pointer;
+    color: rgb(66, 66, 66);
+  }
+
+  & .customSearchField {
+    padding: 5px 15px 5px 55px;
+    background: #ebebeb;
+    border: none;
+    border-radius: 25px;
+    width: 20vw;
+
+    &::placeholder {
+      color: rgb(66, 66, 66);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & .customFormikSearchField {
+    height: 56px;
+    padding: 7px 15px 7px 55px;
+    background: white;
+    border: 1px solid $border;
+    color: #506172;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+
+    &::placeholder {
+      color: #506172;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+}
+
+.navAlertColor {
+  background: $primary;
+}
+
+@media screen and (min-width: 1950px) and (max-width: 2250px) {
+  .navLink {
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 1750px) and (max-width: 1950px) {
+  .navLink {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .searchFieldBox {
+    & .customSearchField {
+      width: 100%;
+    }
+  }
+}

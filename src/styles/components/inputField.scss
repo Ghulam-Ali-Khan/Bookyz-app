@@ -1,0 +1,61 @@
+@import "../common/colors.scss";
+
+@mixin controlStyles {
+  border-radius: 0;
+  border-color: $border;
+  border-width: 1px;
+
+  &:hover {
+    border-color: $primary;
+  }
+}
+
+@mixin focusedFieldStyles {
+  border-color: $primary;
+  box-shadow: none;
+}
+
+.multiField {
+  & .multiField__control {
+    @include controlStyles;
+
+    &.multiField__control--is-focused {
+      @include focusedFieldStyles;
+    }
+
+    & .multiField__multi-value {
+      background: white;
+      border: 1px solid lighten($primary, 50%);
+
+      & .multiField__multi-value__remove {
+        background: #f2f4f7;
+
+        &:hover {
+          background-color: #ffbdad;
+        }
+      }
+    }
+  }
+}
+
+.singleSelect {
+  & .singleSelect__control {
+    @include controlStyles;
+
+    &.singleSelect__control--is-focused {
+      @include focusedFieldStyles;
+    }
+  }
+
+  & .singleSelect__menu {
+    & .singleSelect__option {
+      &.singleSelect__option--is-selected {
+        background-color: $primary;
+
+        &.singleSelect__option--is-focused {
+          background-color: darken($primary, 5);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.logoBox {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    align-content: flex-start;
+    max-width: 260px;
+    max-height: 160px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+  
+    .logoImg {
+      max-width: 200px;
+      object-fit: contain;
+    }
+  
+    @media screen and (max-width: 1300px) {
+      max-width: 250px;
+      padding: 20px 20px;
+  
+      .logoImg {
+        max-width: 150px;
+      }
+    }
+  }

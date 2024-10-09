@@ -1,0 +1,289 @@
+@import "../../common/colors.scss";
+
+// body {
+//   background: #fff6ec !important;
+// }
+
+.heroContainer {
+  height: 600px;
+
+  & .hero-main-img {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  & .heroMainImage {
+    max-width: 100%;
+    width: 470px;
+  }
+}
+
+.categoriesContainer {
+  height: auto;
+  // height: 500px;
+
+  & .categoriesHeading {
+    padding: 10px;
+  }
+
+  & .slick-card-content {
+    height: 5rem;
+  }
+}
+
+.reviewsSectionBox {
+  & .reviewsContainer {
+    border-radius: 10px;
+  }
+
+  & .findServicesBtn {
+    border: 2px solid $brown;
+    padding: 20px 45px;
+    border-radius: 34px;
+  }
+}
+
+.teamsBox {
+  & .teamCardCardMedia {
+    height: 383px;
+    width: 330px;
+  }
+
+  & .teamCardContent {
+    height: 100%;
+    min-height: 250px;
+    max-height: 300px;
+  }
+}
+
+.personReviewBox {
+  & .personReviewContainer {
+    border-radius: 10px;
+
+    & .quoteContainer {
+      position: relative;
+
+      & img {
+        position: absolute;
+        left: -70px;
+      }
+    }
+  }
+}
+
+.servicesBox {
+  padding: 70px 0;
+
+  & .servicesHeading {
+    padding: 0 70px;
+  }
+}
+
+.findWorkSectionBox {
+  & .findWorkGridContainer {
+    border-radius: 10px;
+
+    & .findWorkGridImgWrapper {
+      & .findWorkImg {
+        border-radius: 10px 0 0 10px;
+      }
+    }
+  }
+}
+
+.topFreelancersReviewBox {
+  & .reviewCardContentBox {
+    height: 260px;
+  }
+
+  & .topFreelancerImg {
+    width: 215px;
+    height: 215px;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .heroContainer {
+    height: 500px;
+
+    & .hero-main-img {
+      max-width: 600px;
+      width: 100%;
+    }
+  }
+
+  .categoriesContainer {
+    & .categoriesHeading {
+      padding: 0 30px;
+    }
+  }
+
+  .teamsBox {
+    & .teamCardCardMedia {
+      height: 300px;
+    }
+
+    & .teamCardCardMedia {
+      height: 100%;
+      max-height: max-content;
+      min-height: max-content;
+    }
+  }
+
+  .servicesBox {
+    padding: 50px 0;
+
+    & .servicesHeading {
+      padding: 0px 30px;
+    }
+  }
+
+  .findWorkSectionBox {
+    & .findWorkGridContainer {
+      & .findWorkGridImgWrapper {
+        height: auto;
+      }
+    }
+  }
+
+  .topFreelancersReviewBox {
+    & .reviewCardContentBox {
+      height: 260px;
+    }
+
+    & .topFreelancerImg {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 570px) {
+  .heroContainer {
+    height: 400px;
+  }
+
+  .categoriesContainer {
+    height: auto;
+
+    & .categoriesHeading {
+      padding: 20px 30px;
+    }
+  }
+
+  .teamsBox {
+    & .teamCardCardMedia {
+      height: 250px;
+    }
+
+    & .teamCardCardMedia {
+      height: 100%;
+      max-height: max-content;
+      min-height: max-content;
+    }
+  }
+
+  .personReviewBox {
+    & .personReviewContainer {
+      border-radius: 10px;
+
+      & .quoteContainer {
+        & img {
+          left: -20px;
+        }
+      }
+    }
+  }
+
+  .servicesBox {
+    padding: 30px 0;
+
+    & .servicesHeading {
+      padding: 0px 30px;
+    }
+  }
+
+  .findWorkSectionBox {
+    & .findWorkGridContainer {
+      & .findWorkGridImgWrapper {
+        height: auto;
+      }
+    }
+  }
+
+  .top-freelancers-review-box {
+    & .reviewCardContentBox {
+      height: 180px;
+    }
+
+    & .topFreelancerImg {
+      width: 180px;
+      height: 180px;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .heroContainer {
+    height: auto;
+  }
+
+  .categoriesContainer {
+    height: auto;
+
+    & .categoriesHeading {
+      padding: 20px;
+    }
+  }
+
+  .teamsBox {
+    & .teamCardCardMedia {
+      height: 300px;
+    }
+
+    & .teamCardCardMedia {
+      height: 100%;
+      max-height: max-content;
+      min-height: max-content;
+    }
+  }
+
+  .personReviewBox {
+    & .personReviewContainer {
+      border-radius: 10px;
+
+      & .quoteContainer {
+        & img {
+          left: -20px;
+        }
+      }
+    }
+  }
+
+  .servicesBox {
+    padding: 30px 0;
+
+    & .servicesHeading {
+      padding: 0 20px;
+    }
+  }
+
+  .findWorkSectionBox {
+    & .findWorkGridContainer {
+      & .findWorkGridImgWrapper {
+        height: auto;
+      }
+    }
+  }
+
+  .topFreelancersReviewBox {
+    & .reviewCardContentBox {
+      height: 170px;
+    }
+
+    & .topFreelancerImg {
+      width: 180px;
+      height: 180px;
+    }
+  }
+}
